@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    
+    <script>
+        var validos = parseInt(prompt('Insira os votos válidos'));
+        var brancos = parseInt(prompt('Insita os votos em branco'));
+        var nulos = parseInt(prompt('Insira os votos nulos'));
+        var total = (validos + brancos + nulos);
+        console.log(total);
+
+        var percentualBrancos = (brancos / total) * 100;
+        var percentualNulos = (nulos / total) * 100;
+        var percentualValidos = (validos/total) * 100;
+
+        console.log(percentualBrancos.toFixed(2) + "%");
+        console.log(percentualNulos.toFixed(2) + "%");
+        console.log(percentualValidos.toFixed(2) + "%");
+
+        document.write(`O total de eleitores do munícipio foi de ${total}. Destes, ${percentualValidos.toFixed(2) + "%"} foram votos válidos, com ${percentualBrancos.toFixed(2) + "%"} de votos brancos e ${percentualNulos.toFixed(2) + "%"} de votos nulos` + '<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <script>
+        var maçãs = parseInt(prompt('Digite quantas maçãs deseja comprar'));
+        var maçãsMinimo = 12;
+        var menosFruta = 0.30;
+        var minimoDoze = 0.25;
+        var calculoUm = (menosFruta * maçãs);
+        var calculoDois = (minimoDoze * maçãs);
+        console.log(calculoUm);
+        console.log(calculoDois);
+        
+
+        if (maçãs < maçãsMinimo) {
+            document.write(`O valor total da compra é R$ ${calculoUm}.`);
+        } else if (maçãs >= maçãsMinimo) {
+            document.write(`O valor total da compra é R$ ${calculoDois}.`);
+        }
+    </script>
+</body>
+</html>

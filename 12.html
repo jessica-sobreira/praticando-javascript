@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+</head>
+<body>
+    
+    <script>
+        var anoAtual = parseInt(prompt('Digite o ano atual'));
+        var anoNascimento = parseInt(prompt('Digite sua data de nascimento'));
+        var calculoIdade = (anoAtual - anoNascimento);
+        console.log(calculoIdade);
+
+        if (calculoIdade >= 16) {
+            document.write(`Você poderá votar neste ano!`);
+        } else {
+            document.write(`Você não poderá votar neste ano!`);
+        }
+    </script>
+</body>
+</html>
